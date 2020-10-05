@@ -36,6 +36,14 @@
 // $("ul ul li:nth-child(2)").css("background-color", "yellow");
 
 // every second and third p element
+/*$("p").filter(function(){
+	for(var i =0; i<$("p").length; i++){
 
-$("p").filter(function(a){return ((a%3 == 0||a%2==0) && a!=0);}).css("background-color", "yellow");
+	}
+	return $("p").index(this) == 1 || $("p").index(this) == 2 ;
+}).css("background-color","yellow");*/
+
+$("p").filter(function(index){
+	return (((index+1)%2 == 0)||((index+1)%3 == 0));
+}).css("background-color", "yellow");
 // $("p:nth-of-type(2n)") only works within each element, not across all elements
