@@ -37,6 +37,5 @@
 
 // every second and third p element
 
-// This works but requires two 
 $("p").filter(function(a){return ((a%3 == 0||a%2==0) && a!=0);}).css("background-color", "yellow");
 // $("p:nth-of-type(2n)") only works within each element, not across all elements
