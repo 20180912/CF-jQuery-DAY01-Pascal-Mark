@@ -8,7 +8,7 @@ $("form").submit(function(e) {
 });
 
 // 1.Remove the form from the page
-// $("#myform").remove();
+$("#myform").remove();
 
 // 2. Create 5 new DIVs in the article element
 for (let i = 0; i < 5; i++) {
