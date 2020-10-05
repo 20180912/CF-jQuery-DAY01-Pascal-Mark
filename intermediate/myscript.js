@@ -12,7 +12,7 @@ $("#myform").remove();
 
 // 2. Create 5 new DIVs in the article element
 for (let i = 0; i < 5; i++) {
-	$("article").append('<div>new div</h1>');
+	$("article").append('<div>new div</div>');
 }
 
 // 3. Within the input field change the value to "Search for..."
